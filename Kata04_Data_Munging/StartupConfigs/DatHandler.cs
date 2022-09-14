@@ -58,7 +58,7 @@ namespace Kata04_Data_Munging.StartupConfigs
                                 //enter when the line hasn't correct data
                                 //Console.WriteLine(e.Message);
                                 break;
-                                
+
                             }
 
                         }
@@ -76,6 +76,7 @@ namespace Kata04_Data_Munging.StartupConfigs
 
         public static void ListPrinter()
         {
+            Console.WriteLine("Printing values of interest");
             foreach (Row row in rowList)
             {
                 Console.WriteLine(row.ToString());
@@ -110,15 +111,16 @@ namespace Kata04_Data_Munging.StartupConfigs
 
             int[] daysIndex = new int[sameSpreadDaysCounter];
 
-            for (int i = 0, k = 0; i < sameSpreadDaysCounter; i++)
+            decimal smallestSpread = GetSmallestSpread();
+ 
+            int arrayIndex = 0;
+
+            foreach (Row singleRow in rowList)
             {
-                foreach (Row row in rowList)
+                if (singleRow.GetSpread() == smallestSpread)
                 {
-                    if (row.GetFirstColumn() - row.GetSecondColumn() == GetSmallestSpread())
-                    {
-                        daysIndex[k] = row.GetId();
-                        k++;
-                    }
+                    daysIndex[arrayIndex] = singleRow.GetId();
+                    arrayIndex++;
                 }
             }
 
