@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kata04_Data_Munging.Objects
+namespace Kata04_Data_Munging_Part1.Objects
 {
     public class Row
     {

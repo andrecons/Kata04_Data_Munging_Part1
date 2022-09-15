@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Kata04_Data_Munging.Objects;
+using Kata04_Data_Munging_Part1.Objects;
 
-namespace Kata04_Data_Munging.StartupConfigs
+namespace Kata04_Data_Munging_Part1.StartupConfigs
 
 {
     public static class DatHandler
