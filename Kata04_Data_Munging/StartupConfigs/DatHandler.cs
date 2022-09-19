@@ -83,7 +83,6 @@ namespace Kata04_Data_Munging_Part1.StartupConfigs
             }
         }
 
-        /*TODO: smaller Spread method*/
         public static decimal GetSmallestSpread()
         {
             decimal smallestSpread = 1000;

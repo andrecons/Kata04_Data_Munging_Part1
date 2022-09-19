@@ -10,7 +10,7 @@ DatHandler.Importer();
 DatHandler.ListPrinter();
 
 /*Printing smallest spread value*/
-Console.WriteLine("\n");
+Console.WriteLine("\n\n");
 Console.WriteLine("Smallest Spread:" + DatHandler.GetSmallestSpread());
 
 /*Printing days with smallest spread value*/
@@ -21,6 +21,7 @@ foreach (int integer in array)
 {
     Console.Write(integer + "*");
 }
+Console.WriteLine("\n");
 
 
 
